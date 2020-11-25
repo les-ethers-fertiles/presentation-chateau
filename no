@@ -1,0 +1,3 @@
+# portfolio
+        {{ $item:= site.Data.homepage.portfolio.item_show }}
+        {{ range first $item .Site.RegularPages }}

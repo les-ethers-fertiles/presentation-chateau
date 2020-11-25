@@ -1,0 +1,188 @@
+# Site settings
+baseURL = "/"
+languageCode = "en-us"
+title = "C'est Le Bouquet"
+theme = "forty"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+# Enter your disqus shortname to enable comments
+disqusShortname = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # Provide your metadata here.
+  name = "Your name"
+  description = "Your description"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Just a custom image variable, please define it in .md files for content.
+  image = ""
+
+  # 404 error customization
+  [params.error404]
+    heading = "Ooops! La page n'a pas pu être trouvée."
+    text = "Elle a peut-être été supprimée ou déplacée depuis sa création. Désolé.. Revenez sur [la page d'accueil]((https://aquilenet.fr)) pour poursuivre!"
+
+  # Navigation Section
+  [params.navigation]
+    menu = "Menu"
+    # Optional logo as brand stored in img/
+    # logo = "logo.png"
+
+    [[params.navigation.links]]
+      name = "Questions, Réponses"
+      url = "#"
+      
+    [[params.navigation.links]]
+      name = "Réseau d'accompagnateurs"
+      url = "#"
+      
+    [[params.navigation.links]]
+      name = "Travailler ensemble"
+      url = "#"
+      
+    [[params.navigation.links]]
+      name = "Aux origines de la plateforme"
+      url = "#"
+      
+
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+    # Button Style 1
+    [[params.navigation.button1]]
+      name = "Nous lire: par ici -->"
+      url = "blogs"
+
+
+
+  # Banner section
+  [params.banner]
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title = "C'est Le Bouquet"
+    subtitle = "Vos services de transition numérique, accompagnés et près de chez vous"
+    buttonText = ""
+
+
+  # Tiles Section
+  [params.tiles]
+    enable = true
+    # Display your showcases here.
+    
+   [[params.tiles.showcase]]
+      title = "Questions, Réponses"
+      subtitle = "Professionnels, organisations et collectifs de l'ESS et de l'Éducation: ici, vous trouverez une boîte à outils sécurisée et hébergée près de chez vous ...[cliquez ici -->] "
+      image = "questions-reponses.jpg"
+      url = "blogs/questions-reponses"
+
+    [[params.tiles.showcase]]
+      title = "Réseau d'accompagnateurs en Gironde"
+      subtitle = "Pour co-développer vos savoir-faire, votre plaisir à communiquer et à travailler ensemble... [cliquez ici-->]"
+      image = "carte.png"
+      url = "blogs/accompagnateurs"
+
+     [[params.tiles.showcase]]
+      title = "Travailler ensemble"
+      subtitle = "Disponibles tout au long de la semaine, en ligne ou (encore mieux) sur place dans la métropole Bordelaise pour échanger sur des outils, méthodologies, bonnes pratiques... [cliquez ici-->] "
+      image = "converser.jpg"
+      url = "blogs/travailler-ensemble"
+
+     [[params.tiles.showcase]]
+      title = "Aux origines de la plateforme"
+      subtitle = "Émanation du Fournisseur d'Accès Internet associatif Aquilenet, C'est le Bouquet est un réseau d'accompagnateurs et de techniciens basés en Nouvelle Aquitaine...[cliquez ici -->] "
+      image = "origines.jpg"
+      url = "blogs/origines"
+
+
+  
+    # You can make more showcases by copy and pasting the code above
+
+  [params.blog]
+    # All blogs defined in their own files. You can find example blogs
+    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
+    # at the root of this Hugo site.
+    # For more information take a look at the README.
+    # To add more blogs just copy and paste the code.
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "Articles et actualités"
+    subtitle = "Choisir des outils communs pour échanger des informations et communiquer sereinement dans le travail, voire même en changer, n'est pas un acte anodin qui mélange considérations techniques, organisationnelles et économiques. Tel dans un atelier où les artisans choisissent leurs outils méticuleusement pour pouvoir faire les gestes les plus justes possibles et produire les plus belles créations, des questionnements apparaissent pour bien saisir le qui, le pourquoi, le comment de ce choix.Sur ce blog, nous écrivons sur tout cela: "
+    buttonText = "Nous lire"
+    url = "blogs"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    buttonSend = "Envoyer le message"
+    buttonClear = "L'effacer"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below and uncomment
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    # formEmail = "example@domain.com"
+
+    # Contact Section
+    # You can add multiple emails, phone numbers, or addresses
+    # by copying the corresponding map with frontmatter code.
+    [[params.contact.email]]
+    title = "Email:"
+    email = "cestlebouquet@listes.aquilenet.fr"
+
+    [[params.contact.phone]]
+    title = "Téléphone:"
+    phone = "05 35 54 82 53"
+
+    [[params.contact.address]]
+    title = "Adresse:"
+    street = "20 rue Tourat"
+    city = "Bordeaux (33000)"
+    country = "France"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "C'est le Bouquet"
+
+    # Uses font awesome icons
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      url= "https://www.twitter.com"
+      label = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      url= "https://www.linkedin.com"
+      label = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Design: "
+      url= "https://www.html5up.net"
+      alt = "HTML5 UP"
